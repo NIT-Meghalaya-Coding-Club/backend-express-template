@@ -1,0 +1,19 @@
+# Dependency directories
+node_modules/
+
+# Generated output
+dist/
+coverage/
+build/
+tsconfig.tsbuildinfo
+
+# Lockfiles
+package-lock.json
+
+# TypeScript config (contains comments, not parseable by Prettier)
+tsconfig.json
+
+# Environment files
+.env
+.env.*
+*.env
