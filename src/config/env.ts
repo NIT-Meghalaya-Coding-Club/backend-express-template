@@ -7,6 +7,10 @@ const parsePort = (value: string | undefined): number => {
 
   const port = Number(value);
 
+  if (!Number.isInteger(port) || port < 0 || port > 65535) {
+    throw new Error(`Invalid PORT environment value: "${value}"`);
+  }
+
   return port;
 };
 
